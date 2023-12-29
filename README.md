@@ -11,8 +11,13 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
+
+### `npx json-server --watch json/db.json --port 8000`
+
+You have to run this code in your terminal to start the json server.
+You can change the port number if you want...
 
 ### `npm test`
 
