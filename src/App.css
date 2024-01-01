@@ -1,38 +1,83 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.app {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgb(235, 247, 244);
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-btn{
+  border-radius: 50%;
+  border: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(250, 8, 8);
+  
+
+}
+.todo-wrapper {
+  margin-bottom: 1px; /* Add some spacing between todos */
+}
+
+.todo-each {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10x;
+  background-color: rgb(203, 235, 235);
+  border-radius: 12px;
+}
+
+.dlt {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: black;
+  background-color: none;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.todo-wrapper:hover .dlt {
+  display: inline-block;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-main {
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input {
+  width: auto;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding-left:10px ;
+  padding-right:10px ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
